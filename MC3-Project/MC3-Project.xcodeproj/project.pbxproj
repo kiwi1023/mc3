@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1CF9232A6112D2001BC185 /* ViewAllUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */; };
+		AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9242A6112DC001BC185 /* SendHeartView.swift */; };
+		AC1CF9282A611334001BC185 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9272A611334001BC185 /* User.swift */; };
+		AC1CF92C2A6114FD001BC185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF92B2A6114FD001BC185 /* ContentView.swift */; };
+		AC91E0712A60EE4F002052A9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */; };
 		ACF8B64E2A601FED000EF850 /* MC3_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */; };
 		ACF8B6522A601FEE000EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF8B6512A601FEE000EF850 /* Assets.xcassets */; };
 		ACF8B6552A601FEE000EF850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF8B6542A601FEE000EF850 /* Preview Assets.xcassets */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllUsersView.swift; sourceTree = "<group>"; };
+		AC1CF9242A6112DC001BC185 /* SendHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendHeartView.swift; sourceTree = "<group>"; };
+		AC1CF9272A611334001BC185 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC1CF92B2A6114FD001BC185 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../FirebaseTest/FirebaseTest/ContentView.swift; sourceTree = "<group>"; };
+		AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		ACF8B64A2A601FED000EF850 /* MC3-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC3-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC3_ProjectApp.swift; sourceTree = "<group>"; };
 		ACF8B6512A601FEE000EF850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +52,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1CF9262A611326001BC185 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF9272A611334001BC185 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC47A0EB2A6111B2000E8DA6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8B6532A601FEE000EF850 /* Preview Content */,
+				ACF8B6512A601FEE000EF850 /* Assets.xcassets */,
+				ACF8B65B2A6020A2000EF850 /* GoogleService-Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AC47A0EC2A6111CA000E8DA6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AC91E06E2A60EE2D002052A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF92B2A6114FD001BC185 /* ContentView.swift */,
+				ACF8B6672A602225000EF850 /* AuthView.swift */,
+				AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */,
+				AC1CF9242A6112DC001BC185 /* SendHeartView.swift */,
+				AC91E06F2A60EE3A002052A9 /* ViewModel */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC91E06F2A60EE3A002052A9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		ACF8B6412A601FED000EF850 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +118,10 @@
 		ACF8B64C2A601FED000EF850 /* MC3-Project */ = {
 			isa = PBXGroup;
 			children = (
-				ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */,
-				ACF8B6672A602225000EF850 /* AuthView.swift */,
-				ACF8B6512A601FEE000EF850 /* Assets.xcassets */,
-				ACF8B65B2A6020A2000EF850 /* GoogleService-Info.plist */,
-				ACF8B6532A601FEE000EF850 /* Preview Content */,
+				AC47A0EC2A6111CA000E8DA6 /* Application */,
+				AC1CF9262A611326001BC185 /* Model */,
+				AC91E06E2A60EE2D002052A9 /* View */,
+				AC47A0EB2A6111B2000E8DA6 /* Resource */,
 			);
 			path = "MC3-Project";
 			sourceTree = "<group>";
@@ -76,7 +131,8 @@
 			children = (
 				ACF8B6542A601FEE000EF850 /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "../Preview Content";
 			sourceTree = "<group>";
 		};
 		ACF8B6622A602181000EF850 /* Frameworks */ = {
@@ -167,7 +223,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF8B64E2A601FED000EF850 /* MC3_ProjectApp.swift in Sources */,
+				AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */,
+				AC1CF92C2A6114FD001BC185 /* ContentView.swift in Sources */,
 				ACF8B6682A602226000EF850 /* AuthView.swift in Sources */,
+				AC1CF9232A6112D2001BC185 /* ViewAllUsersView.swift in Sources */,
+				AC1CF9282A611334001BC185 /* User.swift in Sources */,
+				AC91E0712A60EE4F002052A9 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
