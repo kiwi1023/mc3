@@ -58,10 +58,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D4B62342A640B1800DF2144 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AC91E06E2A60EE2D002052A9 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4D4B62352A640B4B00DF2144 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF9332A6125C7001BC185 /* ContentView.swift */,
+				AC91E06F2A60EE3A002052A9 /* ViewModel */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		4D4B62362A640B6200DF2144 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8B6672A602225000EF850 /* AuthView.swift */,
+				4D4B62372A640B7200DF2144 /* ViewModel */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		4D4B62372A640B7200DF2144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4D4B62382A640B8900DF2144 /* FetchUserInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF9222A6112D2001BC185 /* FetchUserInfoView.swift */,
+				AC1CF92D2A611F77001BC185 /* FetchUserInfoViewModel.swift */,
+			);
+			path = FetchUserInfoView;
+			sourceTree = "<group>";
+		};
+		4D4B62392A640B9300DF2144 /* SendHeartView */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF9242A6112DC001BC185 /* SendHeartView.swift */,
+				4D4B623A2A640BAD00DF2144 /* ViewModel */,
+			);
+			path = SendHeartView;
+			sourceTree = "<group>";
+		};
+		4D4B623A2A640BAD00DF2144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		AC1CF9262A611326001BC185 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				AC1CF9272A611334001BC185 /* User.swift */,
+				4D4B62342A640B1800DF2144 /* Presentation */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,11 +148,10 @@
 		AC91E06E2A60EE2D002052A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC1CF9332A6125C7001BC185 /* ContentView.swift */,
-				ACF8B6672A602225000EF850 /* AuthView.swift */,
-				AC1CF9222A6112D2001BC185 /* FetchUserInfoView.swift */,
-				AC1CF9242A6112DC001BC185 /* SendHeartView.swift */,
-				AC91E06F2A60EE3A002052A9 /* ViewModel */,
+				4D4B62352A640B4B00DF2144 /* ContentView */,
+				4D4B62362A640B6200DF2144 /* AuthView */,
+				4D4B62392A640B9300DF2144 /* SendHeartView */,
+				4D4B62382A640B8900DF2144 /* FetchUserInfoView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,9 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				AC1CF9312A6123AB001BC185 /* ContentViewModel.swift */,
-				AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */,
-				AC1CF92D2A611F77001BC185 /* FetchUserInfoViewModel.swift */,
-				AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -129,7 +186,6 @@
 			children = (
 				AC47A0EC2A6111CA000E8DA6 /* Application */,
 				AC1CF9262A611326001BC185 /* Model */,
-				AC91E06E2A60EE2D002052A9 /* View */,
 				AC47A0EB2A6111B2000E8DA6 /* Resource */,
 			);
 			path = "MC3-Project";
