@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1CF9232A6112D2001BC185 /* ViewAllUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */; };
+		AC1CF9232A6112D2001BC185 /* FetchUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9222A6112D2001BC185 /* FetchUserInfoView.swift */; };
 		AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9242A6112DC001BC185 /* SendHeartView.swift */; };
 		AC1CF9282A611334001BC185 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9272A611334001BC185 /* User.swift */; };
-		AC1CF92C2A6114FD001BC185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF92B2A6114FD001BC185 /* ContentView.swift */; };
+		AC1CF92E2A611F77001BC185 /* FetchUserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF92D2A611F77001BC185 /* FetchUserInfoViewModel.swift */; };
+		AC1CF9302A612229001BC185 /* SendHeartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */; };
+		AC1CF9322A6123AB001BC185 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9312A6123AB001BC185 /* ContentViewModel.swift */; };
+		AC1CF9342A6125C7001BC185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9332A6125C7001BC185 /* ContentView.swift */; };
 		AC91E0712A60EE4F002052A9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */; };
 		ACF8B64E2A601FED000EF850 /* MC3_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */; };
 		ACF8B6522A601FEE000EF850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF8B6512A601FEE000EF850 /* Assets.xcassets */; };
@@ -24,10 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllUsersView.swift; sourceTree = "<group>"; };
+		AC1CF9222A6112D2001BC185 /* FetchUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchUserInfoView.swift; sourceTree = "<group>"; };
 		AC1CF9242A6112DC001BC185 /* SendHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendHeartView.swift; sourceTree = "<group>"; };
 		AC1CF9272A611334001BC185 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		AC1CF92B2A6114FD001BC185 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../FirebaseTest/FirebaseTest/ContentView.swift; sourceTree = "<group>"; };
+		AC1CF92D2A611F77001BC185 /* FetchUserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUserInfoViewModel.swift; sourceTree = "<group>"; };
+		AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHeartViewModel.swift; sourceTree = "<group>"; };
+		AC1CF9312A6123AB001BC185 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AC1CF9332A6125C7001BC185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		ACF8B64A2A601FED000EF850 /* MC3-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC3-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF8B64D2A601FED000EF850 /* MC3_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC3_ProjectApp.swift; sourceTree = "<group>"; };
@@ -81,9 +87,9 @@
 		AC91E06E2A60EE2D002052A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC1CF92B2A6114FD001BC185 /* ContentView.swift */,
+				AC1CF9332A6125C7001BC185 /* ContentView.swift */,
 				ACF8B6672A602225000EF850 /* AuthView.swift */,
-				AC1CF9222A6112D2001BC185 /* ViewAllUsersView.swift */,
+				AC1CF9222A6112D2001BC185 /* FetchUserInfoView.swift */,
 				AC1CF9242A6112DC001BC185 /* SendHeartView.swift */,
 				AC91E06F2A60EE3A002052A9 /* ViewModel */,
 			);
@@ -93,7 +99,10 @@
 		AC91E06F2A60EE3A002052A9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AC1CF9312A6123AB001BC185 /* ContentViewModel.swift */,
 				AC91E0702A60EE4F002052A9 /* AuthViewModel.swift */,
+				AC1CF92D2A611F77001BC185 /* FetchUserInfoViewModel.swift */,
+				AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -222,11 +231,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1CF92E2A611F77001BC185 /* FetchUserInfoViewModel.swift in Sources */,
+				AC1CF9342A6125C7001BC185 /* ContentView.swift in Sources */,
 				ACF8B64E2A601FED000EF850 /* MC3_ProjectApp.swift in Sources */,
 				AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */,
-				AC1CF92C2A6114FD001BC185 /* ContentView.swift in Sources */,
+				AC1CF9322A6123AB001BC185 /* ContentViewModel.swift in Sources */,
+				AC1CF9302A612229001BC185 /* SendHeartViewModel.swift in Sources */,
 				ACF8B6682A602226000EF850 /* AuthView.swift in Sources */,
-				AC1CF9232A6112D2001BC185 /* ViewAllUsersView.swift in Sources */,
+				AC1CF9232A6112D2001BC185 /* FetchUserInfoView.swift in Sources */,
 				AC1CF9282A611334001BC185 /* User.swift in Sources */,
 				AC91E0712A60EE4F002052A9 /* AuthViewModel.swift in Sources */,
 			);
