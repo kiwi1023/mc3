@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D4B62432A656FEC00DF2144 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4B62422A656FEC00DF2144 /* SwiftUIView.swift */; };
 		AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9242A6112DC001BC185 /* SendHeartView.swift */; };
 		AC1CF9282A611334001BC185 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF9272A611334001BC185 /* User.swift */; };
 		AC1CF9302A612229001BC185 /* SendHeartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		4D4B623D2A6542CC00DF2144 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D4B62422A656FEC00DF2144 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		AC1CF9242A6112DC001BC185 /* SendHeartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendHeartView.swift; sourceTree = "<group>"; };
 		AC1CF9272A611334001BC185 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AC1CF92F2A612229001BC185 /* SendHeartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendHeartViewModel.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				4D4B62352A640B4B00DF2144 /* participationView */,
 				4D4B62362A640B6200DF2144 /* AuthView */,
 				4D4B62392A640B9300DF2144 /* SendHeartView */,
+				4D4B62422A656FEC00DF2144 /* SwiftUIView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				AC1CF9342A6125C7001BC185 /* ParticipationView.swift in Sources */,
 				ACF8B64E2A601FED000EF850 /* MC3_ProjectApp.swift in Sources */,
+				4D4B62432A656FEC00DF2144 /* SwiftUIView.swift in Sources */,
 				AC1CF9252A6112DC001BC185 /* SendHeartView.swift in Sources */,
 				AC1CF9322A6123AB001BC185 /* ParticipationViewModel.swift in Sources */,
 				AC1CF9302A612229001BC185 /* SendHeartViewModel.swift in Sources */,

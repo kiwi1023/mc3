@@ -12,6 +12,8 @@ class SendHeartViewModel: ObservableObject {
     
     let firebaseDB = Firestore.firestore()
     let currentUser = Auth.auth().currentUser
+    @Published var isActive = false
+    @Published var userIndex = 0
     // 모든 사람들의 정보를 firebase에서 가져오기
    
     func sendHeart(targetUserId: String) {
