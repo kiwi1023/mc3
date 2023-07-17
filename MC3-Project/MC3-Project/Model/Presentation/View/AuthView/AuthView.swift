@@ -51,8 +51,8 @@ struct AuthView: View {
                 Text(viewModel.currentUser?.uid ?? "비로그인")
                     .padding()
              
-                NavigationLink("ContentView", isActive: $viewModel.isActive) {
-                    ContentView()
+                NavigationLink("ParticipationView", isActive: $viewModel.isActive) {
+                    ParticipationView()
                 }
             }
         }

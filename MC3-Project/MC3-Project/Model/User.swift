@@ -1,8 +1,8 @@
 //
 //  User.swift
-//  FirebaseTest
+//  MC3-Project
 //
-//  Created by Kiwi on 2023/07/11.
+//  Created by 송기원 on 2023/07/11.
 //
 
 import Foundation
@@ -15,5 +15,6 @@ struct User: Identifiable {
     var gender: String
     var email: String
     var group: Int
-    var target: String
+    var userSignal: String
+    var isParticipated: Bool
 }

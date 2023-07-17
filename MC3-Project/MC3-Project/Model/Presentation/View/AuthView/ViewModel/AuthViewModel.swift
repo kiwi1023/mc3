@@ -56,7 +56,8 @@ class AuthViewModel: ObservableObject {
                 "gender": "male",
                 "email": self.email,
                 "group": 0,
-                "target": ""
+                "userSignal": "",
+                "isParticipated": false
                 ]
             
             self.firestore.collection("users").document(user.uid).setData(userInfo) { error in
@@ -86,7 +87,8 @@ class AuthViewModel: ObservableObject {
                 "gender": "female",
                 "email": self.email,
                 "group": 0,
-                "target": ""
+                "userSignal": "",
+                "isParticipated": false
                 ]
             
              
