@@ -9,13 +9,16 @@ import SwiftUI
 
 
 struct SendHeartView: View {
+    @ObservedObject var viewModel = SendHeartViewModel()
+    @Binding var userInfo: [User]
+    
     var body: some View {
         HStack(spacing: 20) {
             Button(action: {
-                // 버튼을 클릭했을 때 수행할 액션
+                viewModel.sendHeart(targetUserId: userInfo[0].userID)
             }) {
                 VStack {
-                    Text("Label")
+                    Text(userInfo[0].userName)
                         .font(.headline)
                     Image(systemName: "heart.fill")
                         .resizable()
@@ -33,10 +36,10 @@ struct SendHeartView: View {
             }
             
             Button(action: {
-                // 버튼을 클릭했을 때 수행할 액션
+                viewModel.sendHeart(targetUserId: userInfo[1].userID)
             }) {
                 VStack {
-                    Text("Label")
+                    Text(userInfo[1].userName)
                         .font(.headline)
                     Image(systemName: "heart.fill")
                         .resizable()

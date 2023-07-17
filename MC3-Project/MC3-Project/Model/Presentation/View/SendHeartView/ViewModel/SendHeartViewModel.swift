@@ -5,52 +5,47 @@
 //  Created by 송기원 on 2023/07/14.
 //
 
-//import Foundation
-//import Firebase
-//
-//class SendHeartViewModel: ObservableObject {
-//    @Published var documents: [QueryDocumentSnapshot] = []
-//
-//    // 모든 사람들의 정보를 firebase에서 가져오기
-//    func fetchAllDocuments() {
-//        firebaseDB.collection("users").getDocuments { snapshot, error in
-//            if let error = error {
-//                print("Error fetching documents: \(error)")
-//                return
-//            }
-//            
-//            guard let documents = snapshot?.documents else {
-//                print("No documents")
-//                return
-//            }
-//            
-//            self.documents = documents
-//        }
-//    } // fetchAllDocuments
-//    
-//    
-//    // 내가 원하는 사람("userUUID")에게 하트 보내기
-//    func sendHeartToYou(myID: String, targetID: String) {
-//        let washingtonRef = firebaseDB.collection("users").document("\(myID)")
-//        
-//        // Set the "capital" field of the city 'DC'
-//        washingtonRef.updateData([
-//            "target": targetID
-//        ]) { err in
-//            if let err = err {
-//                print("Error updating document: \(err)")
-//            } else {
-//                print("Document successfully updated")
-//            }
-//        }
-//    } // sendHeartToYou
-//    
-//    func checkMatching(groupNum: Int){
-//        //        List(documents, id: \.documentID) { document in
-//        //            let documentID = document.documentID
-//        //            let data = document.data()
-//        //            Text("Document ID: \(documentID), Data: \(convertDataToString(data: data))")
-//        //        } // List
-//        
-//    }
-//}
+import Foundation
+import Firebase
+
+class SendHeartViewModel: ObservableObject {
+    
+    let firebaseDB = Firestore.firestore()
+    let currentUser = Auth.auth().currentUser
+    // 모든 사람들의 정보를 firebase에서 가져오기
+   
+    func sendHeart(targetUserId: String) {
+        print(targetUserId)
+        let ref = firebaseDB.collection("users").document(currentUser?.uid ?? "")
+        firebaseDB.runTransaction({ (transaction, errorPointer) -> Any? in
+            let Document: DocumentSnapshot
+            do {
+                try Document = transaction.getDocument(ref)
+            } catch let fetchError as NSError {
+                errorPointer?.pointee = fetchError
+                return nil
+            }
+            guard Document.data()?["userSignal"] is String else {
+                let error = NSError(
+                    domain: "AppErrorDomain",
+                    code: -1,
+                    userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to retrieve userSignal from snapshot \(Document)"
+                    ]
+                )
+                errorPointer?.pointee = error
+                return nil
+            }
+            transaction.updateData(["userSignal": targetUserId], forDocument: ref)
+            return nil
+        }) { (object, error) in
+            if let error = error {
+                //실패했을때
+                print("Transaction failed: \(error)")
+            } else {
+                //성공했을 때 출력
+                print("Transaction successfully committed!")
+            }
+        }
+    }
+}

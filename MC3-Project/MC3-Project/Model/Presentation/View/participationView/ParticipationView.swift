@@ -14,8 +14,8 @@ struct ParticipationView: View {
     var body: some View {
         VStack {
             Button(action: {
+                viewModel.fetchCurrentUserGroup()
                 viewModel.participateEvent()
-                viewModel.isActive = true
             }) {
                 Text("참여")
                     .padding()
@@ -38,7 +38,7 @@ struct ParticipationView: View {
         }
         
         NavigationLink("SendHeartView", isActive: $viewModel.isActive) {
-            SendHeartView()
+            SendHeartView(userInfo: $viewModel.userInfo)
         }
     }
 }
